@@ -1,10 +1,10 @@
 const app = require("./app")
 const connectDB =  require("./config/db")
 
-connectDB()
 
-app.listen(4000, () => {
+app.listen(5000, async() => {
     try {
+        await connectDB()
         console.log("Server Connected Successfully")
     }
     catch (err) {
