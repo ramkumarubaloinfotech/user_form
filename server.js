@@ -3,7 +3,7 @@ const connectDB =  require("./config/db")
 
 connectDB()
 
-app.listen(5000, () => {
+app.listen(4000, () => {
     try {
         console.log("Server Connected Successfully")
     }
